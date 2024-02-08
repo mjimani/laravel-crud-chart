@@ -13,7 +13,9 @@ class ChartController extends Controller
             'data' => [1, 2, 5, 9, 1],
             'labels' => ["10:05", "10:10", "10:15", "10:20"],
         ];
-        return view('bar-chart', compact('data'));
+
+        $tab = 'history';
+        return view('line-chart', compact('data','tab'));
     }
 
 }

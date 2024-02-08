@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ChartController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +21,5 @@ Route::get('/', function () {
 });
 
 Route::resource('companies', CompanyController::class);
+Route::resource('home', HomeController::class);
 Route::get('/chart', [ChartController::class, 'chart']);
